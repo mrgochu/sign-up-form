@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: rgb(219, 219, 219);
+    font-family: 'Pragati Narrow', sans-serif;
+    font-size: 28px;
+    --green: rgb(92, 194, 151);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+}
+
+.right{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(29, 29, 29);
+    padding-left: 50px;
+}
+
+footer{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.left{
+    background-image: url("C:/Users/Andy/Documents/OdinProject/sign-up-form/coffee.jfif");
+    width: 40vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.fillouts{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+.inputs{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+}
+
+input{
+    background: rgb(29, 29, 29);;
+    border: none;
+    border-bottom: white 1px solid;
+    font-size: 0.8em;
+}
+
+label{
+    font-size: 0.8em;
+}
+
+.textInfo{
+    font-size: 28px;
+    width: 60%;
+}
+
+button{
+    margin-top: 50px;
+    font-size: 1em;
+    padding: 8px 28px;
+    border-radius: 7px;
+    background-color: var(--green);
+    border: 2px solid var(--green);
+    color: white;
+}
+
+.photocred{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 22px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 22px;
+}
+
+img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.logo{
+    background-color: rgba(27, 27, 27, 0.5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 15px;
+    margin-top:50%;
+}
+
+.logoLabel{
+    font-size: 88px;
+    font-weight: bolder;
+    color:white;
+}
+
+.fa-github {
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
