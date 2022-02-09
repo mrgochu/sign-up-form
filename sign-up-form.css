@@ -30,7 +30,7 @@ footer{
 }
 
 .left{
-    background-image: url("coffee.jfif");
+    background-image: url('coffee.jfif');
     width: 40vw;
     background-position: center;
     background-size: cover;
