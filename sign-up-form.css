@@ -88,6 +88,11 @@ button{
     color: white;
 }
 
+button:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
 .photocred{
     text-align: center;
     width: 100%;
@@ -145,4 +150,11 @@ label{
     font-size: 1rem;
 }
 
-
+h1{
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+/* .loginTextButton:hover{
+    transition: 0.8s;
+    transform: scale(1.1);
+} */
