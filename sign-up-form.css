@@ -24,7 +24,7 @@
 
 footer{
     margin: 0;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     text-align: center;
 }
@@ -41,7 +41,8 @@ footer{
 .fillouts{
     display: flex;
     flex-flow: row wrap;
-    gap: 15px;
+    gap: 33px;
+    padding-bottom: 5px;
 }
 
 .inputs{
@@ -57,9 +58,20 @@ input{
     font-size: 0.8em;
 }
 
-label{
-    font-size: 0.8em;
+input:focus + label{
+    transition: 0.4s;
+    transform: translateY(-1rem);
 }
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(66, 158, 127);
+}
+
+input:not(:placeholder-shown) + label{
+    transform: translateY(-1rem);
+}
+
 
 .textInfo{
     font-size: 28px;
@@ -67,7 +79,7 @@ label{
 }
 
 button{
-    margin-top: 50px;
+    margin: 50px 0px;
     font-size: 1em;
     padding: 8px 28px;
     border-radius: 7px;
@@ -102,7 +114,8 @@ img{
     align-items: center;
     gap: 40px;
     padding: 15px;
-    margin-top:50%;
+    position: absolute;
+    top: 40%;
 }
 
 .logoLabel{
@@ -121,3 +134,15 @@ img{
 .fa-github:hover {
     transform: rotate(360deg) scale(1.2);
   }
+
+label{
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 0.8em;
+}
+
+.loginText{
+    font-size: 1rem;
+}
+
+
