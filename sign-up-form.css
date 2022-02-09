@@ -65,7 +65,7 @@ input:focus + label{
 
 input:focus{
     outline: none;
-    border-bottom: 2px solid rgb(66, 158, 127);
+    border-bottom: 1px solid rgb(66, 158, 127);
 }
 
 input:not(:placeholder-shown) + label{
